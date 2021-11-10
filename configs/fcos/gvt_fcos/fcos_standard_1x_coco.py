@@ -1,5 +1,6 @@
 _base_ = '../fcos_r50_caffe_fpn_gn-head_4x4_1x_coco.py'
 
+find_unused_parameters = True
 model = dict(
     type='FCOS',
     pretrained='pretrain/alt_gvt_small.pth',
