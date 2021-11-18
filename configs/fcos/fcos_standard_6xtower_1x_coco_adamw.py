@@ -2,7 +2,7 @@ _base_ = 'fcos_r50_caffe_fpn_gn-head_4x4_1x_coco.py'
 find_unused_parameters = True
 
 model = dict(
-    pretrained='open-mmlab://detectron2/resnet50_caffe',
+    pretrained='pretrain/resnet50_msra-5891d200.pth',
     bbox_head=dict(
         stacked_convs=6,
         norm_on_bbox=True,
